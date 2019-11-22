@@ -1,0 +1,17 @@
+{
+  "name": "conexionabdmysql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^7.1.2",
+    "mysql": "^2.17.1",
+    "mysql2": "^2.0.1",
+    "sequelize": "^5.21.2"
+  }
+}
