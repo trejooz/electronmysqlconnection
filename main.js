@@ -12,6 +12,13 @@ const shell = electron.shell;
 
 let win
 
+
+// Enable live reload for Electron too
+require('electron-reload')(__dirname, {
+    // Note that the path to electron may vary according to the main file
+    electron: require(`${__dirname}/node_modules/electron`)
+});
+
 function createWindow () {
   win = new BrowserWindow({
     width: 1000,

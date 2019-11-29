@@ -9,9 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "electron": "^7.1.2",
+    "electron-reload": "^1.5.0",
     "mysql": "^2.17.1",
     "mysql2": "^2.0.1",
-    "sequelize": "^5.21.2"
+    "jquery": "^3.3.1"
   }
 }

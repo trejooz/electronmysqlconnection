@@ -2,15 +2,48 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Mysql prueba </title>
+    <title>Pa la diana </title>
+	<!-- Connection Script -->
+  <script type="text/javascript" src="./connection.js"></script>
+	<script type="text/javascript" src="./paintData.js"></script>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
   </head>
   <body>
-<h1>mysql pruebaaa</h1>
+<marquee>
+	<h1>Never Give Up Foranea! <3</h1>
+</marquee>
+<br>
 
-<script  src="./index.js">
-     //require('./index.js')
-       //require('./marca.js')
+<center>
+	<h1>Artistas</h1>
+</center>
+<br>
+<button type="button" class="btn btn-outline-primary">Add a new record</button>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Photo</th>
+      <th scope="col">Name</th>
+      <th scope="col">Gender</th>
+      <th scope="col">actions</th>
+    </tr>
+  </thead>
+  <tbody id="content">
+    <tr>
+      <th scope="row">1</th>
+    </tr>
+  </tbody>
+</table>
+<script>
+
+// Get the mysql service
+paintFirstTenRows();
+
+        
  </script>
- <script src="./marca.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script>let $ = require('jquery');</script>
+<script>require('bootstrap');</script>
   </body>
 </html>
