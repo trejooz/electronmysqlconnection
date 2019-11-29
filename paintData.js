@@ -9,10 +9,6 @@ function paintFirstTenRows(){
             html += '<th scope="row">';
             html += row.id;
             html += '</th>';
-            //Photo
-            html += '<td>';
-            html += row.photo;
-            html += '</td>';
             //Name
             html += '<td>';
             html += row.name;
@@ -23,11 +19,11 @@ function paintFirstTenRows(){
             html += '</td>';
             //action buttons
             html += '<td>';
-            html += '<button type="button" class="btn btn-outline-danger">';
+            html += '<button type="button" onclick="destroy('+row.id+')" class="btn btn-outline-danger">';
             html += 'Delete';
             html += '</button>';
 
-            html += '<button type="button" class="btn btn-outline-warning">';
+            html += '<button type="button" onclick="edit('+row.id+')" class="btn btn-outline-warning">';
             html += 'Edit';
             html += '</button>';
             html += '</td>';

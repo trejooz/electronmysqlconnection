@@ -5,25 +5,44 @@
     <title>Pa la diana </title>
 	<!-- Connection Script -->
   <script type="text/javascript" src="./connection.js"></script>
-	<script type="text/javascript" src="./paintData.js"></script>
+  <script type="text/javascript" src="./paintData.js"></script>
+	<script type="text/javascript" src="./actions.js"></script>
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
   </head>
   <body>
 <marquee>
 	<h1>Never Give Up Foranea! <3</h1>
 </marquee>
+
+
+<div id="form">
+  <div class="container">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input type="text" id="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Gender</label>
+      <input type="text" id="gender" class="form-control" id="exampleInputPassword1" placeholder="Gender">
+    </div>
+    <center>
+      <button onclick="save()" class="btn btn-outline-primary">Submit</button>
+    </center>
+  </div>
+</div>
+
+
 <br>
 
 <center>
-	<h1>Artistas</h1>
+	<h1>Artists</h1>
 </center>
 <br>
-<button type="button" class="btn btn-outline-primary">Add a new record</button>
+<button type="button" onclick="showForm()" class="btn btn-outline-primary">Add a new record</button>
 <table class="table">
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Photo</th>
       <th scope="col">Name</th>
       <th scope="col">Gender</th>
       <th scope="col">actions</th>
@@ -36,11 +55,9 @@
   </tbody>
 </table>
 <script>
-
+document.getElementById("form").style.display = "none";
 // Get the mysql service
-paintFirstTenRows();
-
-        
+paintFirstTenRows();        
  </script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script>let $ = require('jquery');</script>
